@@ -1,5 +1,3 @@
-
-
 .main_header {
     width: 100vw;
     height: calc(100vh - 3rem);
@@ -29,7 +27,7 @@
                 font-size: 1.1rem;
             }
         }
-        
+
         .main_header-right {
             display: grid;
             place-items: center;
@@ -50,6 +48,34 @@
                 &:hover {
                     transform: scale(1.05);
                     transition: var(--transition);
+                }
+            }
+        }
+    }
+}
+
+
+.programs {
+    margin-top: 4rem;
+
+    .programs_wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        margin-top: 4rem;
+
+        .programs_program {
+            a {
+                margin-top: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &:hover {
+                a {
+                    background: var(--color-secondary);
+                    color: var(--color-gray-600);
                 }
             }
         }

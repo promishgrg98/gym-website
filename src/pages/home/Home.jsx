@@ -3,6 +3,7 @@ import './home.css'
 import MainHeader from '../../components/MainHeader'
 import Programs from '../../components/Programs'
 import Values from '../../components/Values'
+import FAQs from '../../components/FAQs'
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <MainHeader />
       <Programs />
       <Values />
+      <FAQs />
     </>
   )
 }

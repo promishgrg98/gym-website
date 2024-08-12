@@ -1,18 +1,21 @@
-import React from 'react'
-import { AiOutlinePlus } from "react-icons/ai";
+import React, { useState } from 'react'
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 function FAQ({ question, answer }) {
+
+    const [isAnswerShowing, setAnswerShowing] = useState(false);
+
     return (
-        <article className='faq'>
+        <article className='faq' onClick={() => setAnswerShowing(prev => !prev)}>
             <div>
                 <h4>{question}</h4>
                 <button className='faq_icon'>
-                    <AiOutlinePlus />
+                    {isAnswerShowing ? <AiOutlineMinus /> : <AiOutlinePlus />}
                 </button>
             </div>
-            <p>{answer}</p>
+            {isAnswerShowing && <p>{answer}</p>}
         </article>
     )
 }
 
-export default FAQ
+export default FAQ  

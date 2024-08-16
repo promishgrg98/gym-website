@@ -33,7 +33,7 @@ function Testimonials() {
     return (
         <section className="testimonials">
             <div className="conatiner testimonials_container">
-                <SectionHead icon={<ImQuotesLeft />} title={'Testimonials'} />
+                <SectionHead icon={<ImQuotesLeft />} title={'Testimonials'} className={'testimonials_head'} />
 
                 <Card className={'testimonial'}>
                     <div className="testimonial_avatar">

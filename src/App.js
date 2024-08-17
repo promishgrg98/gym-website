@@ -7,6 +7,7 @@ import Plans from "./pages/plans/Plans";
 import Trainers from "./pages/trainers/Trainers";
 import Contact from "./pages/contact/Contact";
 import NotFound from "./pages/notFound/NotFound";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" Component={Contact} />
           <Route path="*" Component={NotFound} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

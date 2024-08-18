@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../images/gym-logo.png'
 import { Link } from 'react-router-dom'
-import { FaFacebook, FaLinkedin } from 'react-icons/fa'
+import { FaFacebookF, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import { AiFillInstagram } from 'react-icons/ai'
 import './footer.css'
@@ -19,7 +19,7 @@ function Footer() {
           </p>
           <div className="footer_socials">
             <a href="https://np.linkedin.com/" target='_blank' rel='noreferrer noopener'><FaLinkedin/></a>
-            <a href="https://www.facebook.com/" target='_blank' rel='noreferrer noopener'><FaFacebook/></a>
+            <a href="https://www.facebook.com/" target='_blank' rel='noreferrer noopener'><FaFacebookF/></a>
             <a href="https://x.com/" target='_blank' rel='noreferrer noopener'><FaXTwitter/></a>
             <a href="https://www.instagram.com/" target='_blank' rel='noreferrer noopener'><AiFillInstagram/></a>
           </div>

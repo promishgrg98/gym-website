@@ -144,7 +144,7 @@
                 background: transparent;
                 color: var(--color-gray-100);
                 font-size: 1.5rem;
-            } 
+            }
         }
 
         p {
@@ -216,5 +216,110 @@
                 height: 3rem;
             }
         }
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .main_header {
+        height: fit-content;
+        padding: 12rem 0;
+
+        .main_header-container {
+            gap: 0;
+
+            .main_header-right {
+                .main_header-circle {
+                    width: 16rem;
+                    height: 16rem;
+                }
+            }
+        }
+    }
+
+    .programs {
+        .programs_wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .values_container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 4rem;
+    
+        .values_image {
+            display: none;
+        }
+    
+        .values_right {   
+            .values_wrapper {
+                gap: 4rem 3rem;
+            }
+        }
+    }
+
+    .faqs_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .main_header {
+        margin-top: 0;
+        padding: 12rem 0 0;
+        height: 100vh;
+
+        .main_header-container { 
+            grid-template-columns: 1fr;
+
+            .main_header-right {
+                .main_header-circle, .main_header-image {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .programs {    
+        .programs_wrapper {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+    
+            .programs_program {
+                width: 84%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .values_container {
+        .values_right {
+            .values_wrapper {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+    
+                .values_value {
+                    width: 84%;
+                    margin-inline: auto;
+                }
+            }
+        }
+    }
+
+    .faqs_wrapper {
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    .testimonials {
+        width: 100%;
     }
 }

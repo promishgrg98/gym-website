@@ -40,3 +40,25 @@
 .trainer:hover  a{
     background: var(--color-gray-500);
 }
+
+
+
+@media screen and (max-width: 1024px) {
+    .trainers_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .trainers_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .card.trainer {
+        width: 90%;
+        margin-inline: auto;
+    }
+}
